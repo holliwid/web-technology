@@ -1,0 +1,161 @@
+
+.page__body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    display: grid;
+    grid-row-end: auto;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.75fr;
+    margin-right: 40px;
+}
+
+.header div{
+    text-align: right;
+    align-self: center;
+    font-weight: lighter;
+}
+
+.header div:not(:first-child)::before{
+    color: blue;
+    content: "|";
+}
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+}
+
+.name_of_course{
+    height: 420px;
+    width: 100%;
+    background-image: url(/images/bg_name.jpg);
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.name_of_course h1{
+    font-weight: bold;
+    margin:0;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.name_of_course h4{
+    font-weight: lighter;
+    margin:0;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.about_myself{
+    background: white;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 2fr auto auto;
+    justify-items: center;
+    align-items: center;
+
+    margin: 40px 0 40px 0;
+    padding: 40px 10px 40px 40px;
+}
+
+.about_myself h4{
+    width: fit-content;
+    height: fit-content;
+}
+
+.about_myself img{
+    padding-left: 2px;
+}
+
+.my_competencies h1{
+    text-align: center;
+}
+
+.list_of_competencies{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 100px;
+}
+
+.services{
+    background-color: white;
+    color: black;
+    padding: 40px 0px 10px 0px;
+}
+
+.services h2{
+    text-align: center;
+}
+
+.services ul{
+    columns: 2;
+    column-gap: 10px;
+    margin: 0 100px 100px 300px;
+}
+
+.services li{
+    width: fit-content;
+    padding: 5px;
+}
+
+
+.content{
+    background-color: black;
+    position: relative;
+}
+
+.content h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content p{
+    margin: 40px 40px 40px 40px;
+    font-weight: lighter;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+button{
+    padding: 10px;
+    border-width: 0;
+    border-radius: 9px;
+}
+
+
+
+footer{
+    background-color: white;
+    color: rgb(63, 58, 58);
+    font-size: 12px;
+    text-align: center;
+    height: 100px;
+    padding-top: 15px;
+}
